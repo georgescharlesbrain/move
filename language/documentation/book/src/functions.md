@@ -113,7 +113,7 @@ script {
 
 ### `entry` modifier
 
-The `entry` modifier is designed to allow module functions to be safely and directly invoked much like scripts. This allows module writers to specify which functions can be to begin execution. The module writer then knows that any non-`entry` function will be called from a Move program already in execution.
+The `entry` modifier is designed to allow module functions to be safely and directly invoked, much like scripts. This allows module writers to specify which functions can be used to begin execution. The module writer then knows that any non-`entry` function will only be called from a Move program already in execution.
 
 Essentially, `entry` functions are the "main" functions of a module, and they specify where Move programs start executing.
 
